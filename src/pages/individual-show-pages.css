@@ -1,0 +1,92 @@
+:root {
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clt-dark: #303030;
+  --clr-accent: #ffae03;
+}
+
+.project-body {
+  background-color: var(--clt-dark);
+  color: #fff;
+}
+
+.individual-project-title {
+  margin: 0;
+
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.ind-project-img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--clt-dark);
+  padding: 30px;
+}
+
+.ind-project-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 175px;
+  background-color: var(--clr-light);
+  border-radius: 10px;
+}
+
+.ind-project-img {
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.project-technologies {
+  font-size: x-large;
+  padding: 0px 50px;
+  color: var(--clr-accent);
+  text-align: center;
+}
+
+.project-btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100vw;
+}
+
+.project-page-btns {
+  width: 200px;
+  font-size: larger;
+  padding: 5px;
+  border-radius: 20px;
+  border: 0;
+  background-color: var(--clr-accent);
+  color: var(--clr-light);
+  box-shadow: 1px 2px 10px var(--clr-light);
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-page-btns:hover {
+  box-shadow: 2px 4px 10px var(--clr-light);
+}
+
+.project-description {
+  font-size: large;
+  padding: 0px 50px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 470px) {
+}

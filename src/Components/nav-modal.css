@@ -1,0 +1,38 @@
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--clt-dark);
+  z-index: 5;
+}
+
+.nav-bar-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.nav-btn {
+  width: 200px;
+  background-color: var(--clr-accent);
+  color: var(--clr-light);
+  padding: 10px;
+  border-radius: 20px;
+  font-size: x-large;
+  margin-top: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+/* _______________________________________________600px________________________________________________ */
+
+@media (min-width: 600px) {
+}
