@@ -16,6 +16,9 @@
   text-align: center;
   padding-top: 30px;
 }
+.projects-sub-title {
+  text-align: center;
+}
 
 .my-projects-div {
   display: flex;

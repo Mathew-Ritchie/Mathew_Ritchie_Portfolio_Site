@@ -36,6 +36,7 @@ export default function Projects() {
       <div className="project-spacer" id="project-spacer"></div>
       <div>
         <h1 className="projects-title">Projects</h1>
+        <h3 className="projects-sub-title">(click on an image to see more!)</h3>
         <div id="project-imgs-div">
           {projects.map((project) => (
             <div key={createId()} className="project-img-wrapper">
