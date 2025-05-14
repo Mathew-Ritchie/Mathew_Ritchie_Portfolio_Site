@@ -35,12 +35,12 @@ export default function JSLPage() {
           project was all about vanilla JavaScript.
           <br></br>
           <br></br>
-          Some of the code for this assignment was provided, but will a different range of buggs. It
-          was our job to fgind the bugs and fix them so that the code worked accoring to the user
-          stories requirements.
+          Some of the code for this assignment was provided, but with a different range of bugs. It
+          was our job to find the bugs and fix them so that the code worked according to the user
+          story requirements.
           <br></br>
           <br></br>
-          The second part of this assignemnt involved writing code from scratch to accomplish other
+          The second part of this assignment involved writing code from scratch to accomplish other
           user stories that were provided to us. We had to be able to work with localstorage to be
           able to add tasks to our Agile board, as well as edit or delete tasks. We were also asked
           to use JS and Dom manipulation to make a working theme switch to change between light and

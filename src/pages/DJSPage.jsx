@@ -64,7 +64,7 @@ export default function DJSPage() {
           to sort the podcast shows, and to search by title. The user then needed to be able to view
           a page dedicated to each show, where they could then browse episodes by season. Local
           Storage was utilised to be able to give the use a way to store their favourites which
-          could then be viewed in a seperate favourites page. Local storage was also used to keep
+          could then be viewed in a separate favourites page. Local storage was also used to keep
           track of which episodes the user had already watched and how many times.
         </p>
       </div>
