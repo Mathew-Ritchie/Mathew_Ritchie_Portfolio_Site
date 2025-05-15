@@ -11,6 +11,12 @@ export default function Header({ onToggleModal }) {
           src={mathewLogo}
           alt="logo showing computer outline with coding tags on the screen."
         />
+        <div class="toggle-div">
+          <img src="./assets/icon-dark-theme.svg" id="icon-dark" alt="icon-dark-theme" />
+          <input type="checkbox" id="switch" />
+          <label for="switch" id="label-checkbox-theme"></label>
+          <img src="./assets/icon-light-theme.svg" id="icon-light" alt="icon-light-theme" />
+        </div>
         <button className="header-nav-btn" id="header-nav-btn" onClick={onToggleModal}>
           ☰
         </button>
