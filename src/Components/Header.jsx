@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./header.css";
+import { ThemeContext } from "../Context/ThemeProvider";
 import mathewLogo from "../assets/mathewLogo.png";
 
 export default function Header({ onToggleModal }) {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
   return (
     <header className="header-container" id="header-container">
       <div className="header-div">
@@ -11,12 +14,9 @@ export default function Header({ onToggleModal }) {
           src={mathewLogo}
           alt="logo showing computer outline with coding tags on the screen."
         />
-        <div class="toggle-div">
-          <img src="./assets/icon-dark-theme.svg" id="icon-dark" alt="icon-dark-theme" />
-          <input type="checkbox" id="switch" />
-          <label for="switch" id="label-checkbox-theme"></label>
-          <img src="./assets/icon-light-theme.svg" id="icon-light" alt="icon-light-theme" />
-        </div>
+        <button onClick={toggleTheme}>
+          {theme === "light" ? "Switch to Dark" : "Switch to Light"}
+        </button>
         <button className="header-nav-btn" id="header-nav-btn" onClick={onToggleModal}>
           ☰
         </button>
