@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./projects-header.css";
 import mathewLogo from "../assets/mathewLogo.png";
+import ThemeToggleBtn from "./ThemeToggleBtn";
 
 export default function ProjectsHeader() {
   return (
@@ -12,11 +13,14 @@ export default function ProjectsHeader() {
           src={mathewLogo}
           alt="logo showing computer outline with coding tags on the screen."
         />
-        <Link to={"/"}>
-          <button className="projects-header-nav-btn" id="projects-header-nav-btn">
-            Home
-          </button>
-        </Link>
+        <div className="project-header-btn-div">
+          <Link to={"/"}>
+            <button className="projects-header-nav-btn" id="projects-header-nav-btn">
+              Home
+            </button>
+          </Link>
+          <ThemeToggleBtn />
+        </div>
       </div>
     </header>
   );

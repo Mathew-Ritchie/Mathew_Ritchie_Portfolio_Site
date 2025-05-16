@@ -1,5 +1,6 @@
 .spacer {
   height: 50px;
+  background-color: var(--clr-medium);
 }
 
 .intro-section {
@@ -8,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--clr-medium);
 }
 
 .intro-div {

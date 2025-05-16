@@ -5,14 +5,18 @@
 
 :root {
   --clr-light: #fff;
+  --clr-medium: #808080;
   --clt-dark: #303030;
   --clr-accent: #ffae03;
+  --clr-main-text: #fff;
 }
 
 .light-theme {
   --clr-light: #fff;
-  --clt-dark: #303030;
-  --clr-accent: #9ef01a;
+  --clr-medium: ##fff;
+  --clt-dark: #e0e0e0;
+  --clr-accent: #ffae03;
+  --clr-main-text: #303030;
 }
 
 body {

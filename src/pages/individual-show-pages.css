@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --ff-primary: "Source Sans Pro", sans-serif;
   --ff-secondary: "Source Code Pro", monospace;
 
@@ -8,11 +8,12 @@
   --clr-light: #fff;
   --clt-dark: #303030;
   --clr-accent: #ffae03;
-}
+} */
 
 .project-body {
   background-color: var(--clt-dark);
-  color: #fff;
+  color: var(--clr-main-text);
+  width: 100vw;
 }
 
 .individual-project-title {

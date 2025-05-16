@@ -1,17 +1,20 @@
 import React, { useContext } from "react";
 import "./header.css";
-import { ThemeContext } from "../Context/ThemeProvider";
+// import { ThemeContext } from "../Context/ThemeProvider";
 import mathewLogo from "../assets/mathewLogo.png";
-import logoGreen from "../assets/logoGreen.png";
-import { FaLightbulb } from "react-icons/fa6";
-import { FaRegLightbulb } from "react-icons/fa";
+
+// import { FaLightbulb } from "react-icons/fa6";
+// import { FaRegLightbulb } from "react-icons/fa";
 import NavBar from "./NavBar";
 
+import ThemeToggleBtn from "./ThemeToggleBtn";
+
 export default function Header({ onToggleModal }) {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  // const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
     <header className="header-container" id="header-container">
+      <div className="header-background-div"></div>
       <div className="header-div">
         <img
           className="header-img"
@@ -27,9 +30,10 @@ export default function Header({ onToggleModal }) {
           >
             ☰
           </button>
-          <button className="toggle-btn" onClick={toggleTheme}>
+          <ThemeToggleBtn />
+          {/* <button className="toggle-btn" onClick={toggleTheme}>
             {theme === "light" ? <FaLightbulb /> : <FaRegLightbulb />}
-          </button>
+          </button> */}
         </div>
       </div>
     </header>
