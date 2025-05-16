@@ -56,4 +56,13 @@
     height: 105px;
     box-shadow: 2px 2px 2px var(--clr-light);
   }
+  .toggle-btn {
+    margin: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .projects-header-img {
+    width: 200px;
+  }
 }
