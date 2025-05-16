@@ -9,6 +9,7 @@
   --clt-dark: #303030;
   --clr-accent: #ffae03;
   --clr-main-text: #fff;
+  --clr-alt-text: #fff;
 }
 
 .light-theme {
@@ -17,6 +18,7 @@
   --clt-dark: #e0e0e0;
   --clr-accent: #ffae03;
   --clr-main-text: #303030;
+  --clr-alt-text: #303030;
 }
 
 body {
