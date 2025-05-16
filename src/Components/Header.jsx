@@ -2,6 +2,9 @@ import React, { useContext } from "react";
 import "./header.css";
 import { ThemeContext } from "../Context/ThemeProvider";
 import mathewLogo from "../assets/mathewLogo.png";
+import logoGreen from "../assets/logoGreen.png";
+import { FaLightbulb } from "react-icons/fa6";
+import { FaRegLightbulb } from "react-icons/fa";
 
 export default function Header({ onToggleModal }) {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -11,14 +14,15 @@ export default function Header({ onToggleModal }) {
       <div className="header-div">
         <img
           className="header-img"
-          src={mathewLogo}
+          src={theme === "light" ? logoGreen : mathewLogo}
           alt="logo showing computer outline with coding tags on the screen."
         />
-        <button onClick={toggleTheme}>
-          {theme === "light" ? "Switch to Dark" : "Switch to Light"}
-        </button>
+
         <button className="header-nav-btn" id="header-nav-btn" onClick={onToggleModal}>
           ☰
+        </button>
+        <button className="toggle-btn" onClick={toggleTheme}>
+          {theme === "light" ? <FaLightbulb /> : <FaRegLightbulb />}
         </button>
       </div>
     </header>
