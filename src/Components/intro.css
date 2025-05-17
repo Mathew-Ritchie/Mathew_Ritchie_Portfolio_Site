@@ -46,6 +46,7 @@ strong {
   margin-bottom: 50px;
   margin: 0;
   font-size: var(--fs-h3);
+  border-radius: 2px;
 }
 
 .intro-img {

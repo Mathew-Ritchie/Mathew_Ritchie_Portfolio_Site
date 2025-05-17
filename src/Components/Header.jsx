@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./header.css";
 // import { ThemeContext } from "../Context/ThemeProvider";
 import mathewLogo from "../assets/mathewLogo.png";
-
+import newLogo from "../assets/newLogo.png";
 // import { FaLightbulb } from "react-icons/fa6";
 // import { FaRegLightbulb } from "react-icons/fa";
 import NavBar from "./NavBar";
@@ -18,7 +18,7 @@ export default function Header({ onToggleModal }) {
       <div className="header-div">
         <img
           className="header-img"
-          src={mathewLogo}
+          src={newLogo}
           alt="logo showing computer outline with coding tags on the screen."
         />
         <div className="header-nav-toggle-div">
