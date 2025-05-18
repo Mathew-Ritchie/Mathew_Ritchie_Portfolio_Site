@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./projects-header.css";
-import mathewLogo from "../assets/mathewLogo.png";
+import newLogo from "../assets/newLogo.png";
 import ThemeToggleBtn from "./ThemeToggleBtn";
 
 export default function ProjectsHeader() {
@@ -10,7 +10,7 @@ export default function ProjectsHeader() {
       <div className="projects-header-div">
         <img
           className="projects-header-img"
-          src={mathewLogo}
+          src={newLogo}
           alt="logo showing computer outline with coding tags on the screen."
         />
         <div className="project-header-btn-div">
