@@ -17,7 +17,7 @@
 }
 
 .projects-title {
-  font-size: xx-large;
+  font-size: var(--title-font-size);
   text-align: center;
   /* padding-top: 30px; */
   margin-top: 70px;

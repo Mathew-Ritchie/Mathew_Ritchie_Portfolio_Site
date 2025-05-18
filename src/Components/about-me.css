@@ -25,7 +25,7 @@
   color: var(--clr-accent);
   /* padding-top: 50px; */
   padding-bottom: 30px;
-  font-size: xx-large;
+  font-size: var(--title-font-size);
   margin-bottom: 0;
   margin-top: 100px;
 }

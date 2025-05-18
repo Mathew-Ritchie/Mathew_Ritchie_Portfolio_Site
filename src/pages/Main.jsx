@@ -6,6 +6,7 @@ import Footer from "../Components/Footer.jsx";
 import AboutMe from "../Components/AboutMe.jsx";
 import Projects from "../Components/Projects.jsx";
 import NavModal from "../Components/NavModal.jsx";
+import Technologies from "../Components/Technologies.jsx";
 
 export default function MainPage() {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -28,6 +29,7 @@ export default function MainPage() {
       <AboutMe id="about-me-div" />
       <div className="project-spacer" id="project-spacer"></div>
       <Projects id="my-projects-div" />
+      <Technologies />
       <Footer id="contact-div" />
     </div>
   );

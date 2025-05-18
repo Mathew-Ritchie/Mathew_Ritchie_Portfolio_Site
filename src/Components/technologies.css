@@ -1,0 +1,10 @@
+.technology-div {
+  background-color: var(--clt-dark);
+  padding-top: 20px;
+  color: var(--clr-alt-text);
+  text-align: center;
+}
+
+.technology-title {
+  font-size: var(--title-font-size);
+}

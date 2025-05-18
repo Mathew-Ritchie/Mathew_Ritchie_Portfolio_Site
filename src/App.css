@@ -10,6 +10,8 @@
   --clr-accent: #ffae03;
   --clr-main-text: #fff;
   --clr-alt-text: #fff;
+
+  --title-font-size: 2rem;
 }
 
 .light-theme {
