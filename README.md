@@ -7,3 +7,8 @@ This is a basic website I have created to showcase my CodeSpace portfolio piece 
 # Project Setup
 
 `npm insall`
+
+
+# Technologies incoporated in this project. 
+
+HTML | CSS | JavaScript | React | React-router 
