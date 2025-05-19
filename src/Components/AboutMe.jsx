@@ -4,7 +4,7 @@ import "./about-me.css";
 
 export default function AboutMe() {
   return (
-    <section className="about-me-div" id="about-me-div">
+    <div className="about-me-div" id="about-me-div">
       <div className="about-spacer" id="about-spacer"></div>
       <div className="about-me-paragraph-div">
         <h1 className="about-me-heading">About me</h1>
@@ -34,6 +34,6 @@ export default function AboutMe() {
           develop my skills in a supportive and growth-oriented setting.
         </p>
       </div>
-    </section>
+    </div>
   );
 }
