@@ -1,5 +1,9 @@
 # Mathew_Ritchie_Portfolio_site
 
+## About
+
 This is a basic website I have created to showcase my CodeSpace portfolio piece as well as any side projects I might be involved with.
 
-I used ReactJS for the project.
+# Project Setup
+
+`npm insall`
