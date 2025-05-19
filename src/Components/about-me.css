@@ -7,11 +7,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--clt-dark);
+
   background-image: url("../assets/aboutmeback.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  /* opacity: 0.4; */
   min-height: fit-content;
   color: #fff;
   height: 100vh;
@@ -27,11 +26,9 @@
 
 .about-me-heading {
   color: var(--clr-accent);
-  /* padding-top: 50px; */
   padding-bottom: 30px;
   font-size: var(--title-font-size);
   margin-bottom: 0;
-  /* margin-top: 100px; */
 }
 
 .about-me-paragraph-div {
@@ -74,7 +71,6 @@
   .about-me-img {
     grid-area: img;
     min-width: auto;
-    /* padding-bottom: 50px; */
   }
 
   .about-me-p {
@@ -106,7 +102,6 @@
   .about-me-img {
     grid-area: img;
     width: 14em;
-    /* padding-bottom: 50px; */
   }
 
   .about-me-p {
