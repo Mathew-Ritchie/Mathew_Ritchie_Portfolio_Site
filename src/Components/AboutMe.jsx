@@ -9,12 +9,6 @@ export default function AboutMe() {
       <div className="about-me-paragraph-div">
         <h1 className="about-me-heading">About me</h1>
 
-        {/* <img
-          className="about-me-img"
-          src={boat}
-          alt="Picture of Mathew Ritchie on a boat and table mountian in the background"
-        /> */}
-
         <p className="about-me-p">
           Currently based in the vibrant community of Hout Bay, Cape Town, I'm an easy-going and
           friendly individual who appreciates a balanced approach to life. My inherent drive and
