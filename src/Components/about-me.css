@@ -7,7 +7,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   background-image: url("../assets/aboutmeback.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -49,7 +48,7 @@
 }
 /* ________________________________________________min 600px________________________________________________ */
 
-@media (min-width: 770px) {
+/* @media (min-width: 770px) {
   .about-me-grid {
     display: grid;
     grid-column-gap: 1em;
@@ -109,4 +108,4 @@
     font-size: 19px;
     font-weight: 200;
   }
-}
+} */
