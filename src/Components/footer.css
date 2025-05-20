@@ -6,7 +6,7 @@
   flex-direction: column;
   height: 60vh;
   background-color: var(--clt-dark);
-  color: var(--clr-light);
+  color: var(--clr-main-text);
   padding: 20px 0px;
 }
 

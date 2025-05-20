@@ -5,7 +5,7 @@ export default function Technologies() {
   return (
     <section className="technology-div">
       <h1 className="technology-title">Technologies</h1>
-      <div align="center">
+      <div>
         <code>
           <img
             width="60"

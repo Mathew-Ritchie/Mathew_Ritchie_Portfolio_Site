@@ -27,9 +27,10 @@ export default function MainPage() {
       <Intro id="intro-div" />
       <div className="about-spacer" id="about-spacer"></div>
       <AboutMe id="about-me-div" />
+      <Technologies />
       <div className="project-spacer" id="project-spacer"></div>
       <Projects id="my-projects-div" />
-      <Technologies />
+
       <Footer id="contact-div" />
     </div>
   );

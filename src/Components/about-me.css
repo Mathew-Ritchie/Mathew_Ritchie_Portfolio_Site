@@ -13,6 +13,7 @@
   min-height: fit-content;
   color: #fff;
   height: 100vh;
+  padding: 1em 0;
 }
 
 .about-me-grid {
@@ -38,15 +39,28 @@
   background-color: var(--clr-dark-rgb);
   border-radius: 5px;
   width: auto;
-  margin-left: 4em;
-  margin-right: 4em;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 0 10px;
 }
 
 .about-me-p {
   padding: 0px 10px 10px 10px;
   color: var(--clr-main-text);
+  text-align: start;
+  margin-top: 0;
 }
 /* ________________________________________________min 600px________________________________________________ */
+
+@media (min-width: 1024px) {
+  .about-me-paragraph-div {
+    margin-left: 4em;
+    margin-right: 4em;
+  }
+  .about-me-p {
+    font-size: x-large;
+  }
+}
 
 /* @media (min-width: 770px) {
   .about-me-grid {

@@ -1,15 +1,19 @@
 .technology-div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   background-color: var(--clt-dark);
   padding-top: 20px;
+  padding-bottom: 20px;
   color: var(--clr-alt-text);
   text-align: center;
   height: 30vh;
+  padding: 2em;
+  height: fit-content;
 }
 
 .technology-title {
   font-size: var(--title-font-size);
+  margin-top: 0;
 }
