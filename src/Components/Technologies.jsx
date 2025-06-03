@@ -94,6 +94,14 @@ export default function Technologies() {
             title="Vite"
           />
         </code>
+        <code>
+          <img
+            width="60"
+            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/postgresql.png"
+            alt="PostgreSQL"
+            title="PostgreSQL"
+          />
+        </code>
       </div>
     </section>
   );

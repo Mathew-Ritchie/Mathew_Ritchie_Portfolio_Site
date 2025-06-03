@@ -30,7 +30,6 @@ export default function MainPage() {
       <Technologies />
       <div className="project-spacer" id="project-spacer"></div>
       <Projects id="my-projects-div" />
-
       <Footer id="contact-div" />
     </div>
   );
