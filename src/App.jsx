@@ -5,6 +5,7 @@ import MainPage from "./pages/Main.jsx";
 import DJSPage from "./pages/DJSPage.jsx";
 import JSLPage from "./pages/JSLPage.jsx";
 import SDFPage from "./pages/SDFPage.jsx";
+import FakeStorePage from "./pages/FakeStorePage.jsx";
 
 import "./App.css";
 import ProjectHeaderFooter from "./Components/ProjectHeaderFooter.jsx";
@@ -18,6 +19,7 @@ function App() {
           <Route path="SDF" element={<SDFPage />} />
           <Route path="JSL" element={<JSLPage />} />
           <Route path="DJS" element={<DJSPage />} />
+          <Route path="fakestore" element={<FakeStorePage />} />
         </Route>
       </Routes>
     </BrowserRouter>

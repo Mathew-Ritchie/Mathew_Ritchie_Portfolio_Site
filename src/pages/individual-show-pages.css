@@ -48,6 +48,10 @@
   border-radius: 10px;
 }
 
+.ind-project-img-fakestore {
+  width: 200px;
+}
+
 .project-technologies {
   font-size: x-large;
   padding: 0px 50px;
@@ -90,4 +94,84 @@
 }
 
 @media (max-width: 470px) {
+}
+
+.project-body {
+  /* Your existing body styles */
+}
+
+.individual-project-title {
+  /* Your existing title styles */
+}
+
+.carousel {
+  /* This is the visible window for your carousel */
+  width: 100%; /* Or a specific fixed width, e.g., 800px */
+  overflow: hidden; /* **CRUCIAL: Hides content that spills outside this container** */
+  position: relative; /* Needed if you position buttons absolutely later */
+  margin: 20px auto; /* Center the carousel, or adjust as needed */
+}
+
+.carousel-wrapper {
+  /* This container holds all your carousel items side-by-side */
+  display: flex; /* Arranges items in a row */
+  transition: transform 0.5s ease-in-out; /* Smooth transition for slides */
+  /* Do NOT set a fixed width here. Its width will be determined by its children */
+}
+
+.carousel-item {
+  /* Each item should take up 100% of the parent's (carousel's) width */
+  min-width: 100%; /* **CRUCIAL: Ensures each item takes full width** */
+  box-sizing: border-box; /* Include padding/border in the width calculation */
+  display: flex; /* To center image if needed */
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+}
+
+.carousel-item img {
+  /* Style your images to fit within their carousel item */
+  max-width: 100%; /* Ensures image doesn't overflow its container */
+  max-height: 500px; /* Example: Limit height if images are very tall */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below image */
+}
+
+/* Styles for your buttons (optional but good practice) */
+.carousel button {
+  position: absolute; /* Position buttons relative to .carousel */
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 10; /* Ensure buttons are above images */
+}
+
+.carousel button:first-of-type {
+  /* Previous button */
+  left: 10px;
+}
+
+.carousel button:last-of-type {
+  /* Next button */
+  right: 10px;
+}
+
+/* Your existing project technologies, buttons, and description styles */
+.project-technologies {
+  /* ... */
+}
+
+.project-btn-div {
+  /* ... */
+}
+
+.project-page-btns {
+  /* ... */
+}
+
+.project-description {
+  /* ... */
 }
