@@ -10,6 +10,7 @@ import FakeStorePage from "./pages/FakeStorePage.jsx";
 import "./App.css";
 import ProjectHeaderFooter from "./Components/ProjectHeaderFooter.jsx";
 import DJSNew from "./pages/DJSNew.jsx";
+import JSLNew from "./pages/JSLNew.jsx";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/Project" element={<ProjectHeaderFooter />}>
           <Route path="SDF" element={<SDFPage />} />
-          <Route path="JSL" element={<JSLPage />} />
+          <Route path="JSL" element={<JSLNew />} />
           <Route path="DJS" element={<DJSNew />} />
           <Route path="fakestore" element={<FakeStorePage />} />
         </Route>
