@@ -2,13 +2,14 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import MainPage from "./pages/Main.jsx";
-import DJSPage from "./pages/DJSPage.jsx";
+
 import JSLPage from "./pages/JSLPage.jsx";
 import SDFPage from "./pages/SDFPage.jsx";
 import FakeStorePage from "./pages/FakeStorePage.jsx";
 
 import "./App.css";
 import ProjectHeaderFooter from "./Components/ProjectHeaderFooter.jsx";
+import DJSNew from "./pages/DJSNew.jsx";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path="/Project" element={<ProjectHeaderFooter />}>
           <Route path="SDF" element={<SDFPage />} />
           <Route path="JSL" element={<JSLPage />} />
-          <Route path="DJS" element={<DJSPage />} />
+          <Route path="DJS" element={<DJSNew />} />
           <Route path="fakestore" element={<FakeStorePage />} />
         </Route>
       </Routes>
