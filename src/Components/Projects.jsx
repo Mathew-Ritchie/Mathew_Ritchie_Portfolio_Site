@@ -5,6 +5,7 @@ import { v4 as createId } from "uuid";
 import JSL from "../assets/JSL-pic.png";
 import SDF from "../assets/SDF-pic.png";
 import DJS from "../assets/DJS.png";
+import FakeStore from "../assets/fakestore.png";
 
 export default function Projects() {
   const projects = [
@@ -28,6 +29,13 @@ export default function Projects() {
       title: "Podcast App",
       subTitle: "JavaScript, React, Css",
       to: "/project/DJS",
+    },
+    {
+      img: FakeStore,
+      alt: "screenshot of Fake Store App",
+      title: "My-Fake-Store App",
+      subTitle: "JavaScript, React, Zustand, Firebase",
+      to: "/project/fakestore",
     },
   ];
 
