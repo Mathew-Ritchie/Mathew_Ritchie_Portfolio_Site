@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="header-mail">
         <h1 className="contact-title">I would love for you to get in touch!</h1>
         <a className="contact-email" href="mailto:ritchmat89@gmail.com" target="_blank">
-          ritchmat89@gmail.com
+          mathew.j.ritchie@gmail.com
         </a>
       </div>
       <div>

@@ -17,19 +17,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   height: 300px;
 }
 
 .nav-btn {
-  width: 200px;
-  background-color: var(--clr-accent);
-  color: var(--clr-light);
-  padding: 10px;
-  border-radius: 20px;
-  font-size: x-large;
-  margin-top: 10px;
-  font-weight: bolder;
-  cursor: pointer;
+  color: var(--clr-accent);
+  font-size: xx-large;
+  border: 0;
+  background-color: transparent;
+  /* border-right: 2px solid gray; */
+  /* box-shadow: 1px 0px 10px var(--clr-accent); */
+  border-radius: 5px;
 }
 
 /* _______________________________________________600px________________________________________________ */

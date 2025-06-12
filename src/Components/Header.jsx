@@ -31,9 +31,6 @@ export default function Header({ onToggleModal }) {
             ☰
           </button>
           <ThemeToggleBtn />
-          {/* <button className="toggle-btn" onClick={toggleTheme}>
-            {theme === "light" ? <FaLightbulb /> : <FaRegLightbulb />}
-          </button> */}
         </div>
       </div>
     </header>
