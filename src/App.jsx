@@ -19,7 +19,6 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/Project" element={<ProjectHeaderFooter />}>
           <Route path="SDF" element={<SDFNew />} />
-
           <Route path="JSL" element={<JSLNew />} />
           <Route path="DJS" element={<DJSNew />} />
           <Route path="fakestore" element={<FakeStorePage />} />

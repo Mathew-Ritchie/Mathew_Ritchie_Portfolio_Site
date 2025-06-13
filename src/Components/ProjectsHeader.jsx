@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
+
 import "./projects-header.css";
 import newLogo from "../assets/newLogo.png";
 import ThemeToggleBtn from "./ThemeToggleBtn";
@@ -14,9 +15,9 @@ export default function ProjectsHeader() {
           alt="logo showing computer outline with coding tags on the screen."
         />
         <div className="project-header-btn-div">
-          <Link to={"/"}>
+          <Link to={"/#project-spacer"} smooth>
             <button className="projects-header-nav-btn" id="projects-header-nav-btn">
-              Home
+              Back to projects
             </button>
           </Link>
           <ThemeToggleBtn />
