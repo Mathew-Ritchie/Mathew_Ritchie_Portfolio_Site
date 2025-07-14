@@ -11,6 +11,7 @@ import ProjectHeaderFooter from "./Components/ProjectHeaderFooter.jsx";
 import DJSNew from "./pages/DJSNew.jsx";
 import JSLNew from "./pages/JSLNew.jsx";
 import SDFNew from "./pages/SDFNew.jsx";
+import RecipeAppPage from "./pages/RecipeAppPage.jsx";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="JSL" element={<JSLNew />} />
           <Route path="DJS" element={<DJSNew />} />
           <Route path="fakestore" element={<FakeStorePage />} />
+          <Route path="recipe_app" element={<RecipeAppPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
