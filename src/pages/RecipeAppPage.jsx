@@ -20,7 +20,7 @@ export default function RecipeAppPage() {
 
   return (
     <div className="project-body">
-      <h1 className="individual-project-title">The Best Ever Podcast web App</h1>
+      <h1 className="individual-project-title">My Recipe Book</h1>
       <div className="carousel">
         <div
           className="carousel-wrapper"
@@ -38,18 +38,18 @@ export default function RecipeAppPage() {
         </div>
       </div>
       <div>
-        <p className="project-technologies">| JAVASCRIPT | REACT | ZUSTAND | FIREBASE</p>
+        <p className="project-technologies">| JAVASCRIPT | REACT | ZUSTAND | TAILWIND CSS</p>
       </div>
       <div className="project-btn-div">
         <a
-          href="https://github.com/Mathew-Ritchie/Mathew_Ritchie_Podcast_Portfolio_Project_CodeSpace_DJS11"
+          href="https://github.com/Mathew-Ritchie/Recipe_App_API_Practice_Mathew_Ritchie"
           target="_blank"
           className="project-page-btns"
         >
           Github Repository
         </a>
         <a
-          href="https://the-best-ever-podcast-web-app-2.netlify.app/"
+          href="https://mathews-recipe-book.netlify.app/recipes/a"
           target="_blank"
           className="project-page-btns"
         >
@@ -58,30 +58,35 @@ export default function RecipeAppPage() {
       </div>
       <div>
         <p className="project-description">
-          This project represents the culmination of my Web Development course at CodeSpace Academy,
-          serving as a comprehensive application of all the skills and knowledge acquired during my
-          studies. Tasked with developing a podcast playing app from a given API, the objective was
-          to fulfill a specific list of user stories, with almost complete autonomy over the
-          technological approaches used to achieve them.
+          The "My Recipe Book" web application was developed as a personal project to explore and
+          implement modern web development technologies. The primary focus of this was to gain more
+          practical experience with Tailwind CSS for styling and to integrate with The MealDB API
+          for data retrieval.
           <br></br>
-          <br></br>At its core, the application is built with React, adhering to the project's
-          foundational requirement. Beyond that, I had the freedom to select supplementary
-          technologies. I chose Zustand as the state management solution, which proved highly
-          effective for handling the fetching, sorting, and storage of podcast data. This
-          centralized store simplified the process of distributing data and functionality to various
-          components and pages as needed. Additionally, React Router was integrated to transform the
-          application into a Single Page Application (SPA), significantly enhancing the UI structure
-          and streamlining user navigation.
+          <br></br>The application leverages React with JavaScript for its front-end architecture,
+          utilizing a Zustand store to efficiently fetch and manage data from The MealDB API. The
+          MealDB API is a publicly available resource that provides comprehensive meal and recipe
+          data. Users can search for recipes based on the initial letter of the recipe title or by
+          category. Upon selecting a specific recipe, the application fetches detailed information,
+          including ingredients, measurements, preparation instructions, and links to associated
+          YouTube videos, all identified via a unique recipe ID.
+          <br></br>
+          <br></br>A core objective of this project was to thoroughly engage with the Tailwind CSS
+          framework. A significant advantage observed during development was Tailwind's ability to
+          streamline project file organization by reducing the need for numerous external CSS files,
+          a common practice in traditional component-based styling. While this approach effectively
+          declutters the project's file structure, it does introduce a trade-off by increasing the
+          density of className attributes within JSX files.
           <br></br>
           <br></br>
-          The provided podcast API offered multiple endpoints, requiring careful navigation to
-          extract the necessary data for the app's features. Once the data was successfully fetched,
-          users are provided with intuitive ways to sort podcast shows and search by title. A
-          dedicated page for each show allows users to effortlessly browse episodes by season.
-          Furthermore, local storage plays a crucial role in enhancing the user experience, enabling
-          users to store their favorite shows for quick access on a separate favorites page. Local
-          storage is also utilized to track previously played episodes and their play counts,
-          providing a personalized playback history.
+          Furthermore, Tailwind CSS significantly streamlines the process of implementing responsive
+          design. Its utility-first and mobile-first philosophy, coupled with an intuitive system of
+          responsive variants and built-in breakpoints (e.g., sm:, md:, lg:), allows developers to
+          define how elements behave and appear across different screen sizes directly within the
+          HTML markup. This eliminates the need for writing verbose custom media queries in separate
+          CSS files, thereby accelerating development cycles and ensuring consistent, adaptive
+          layouts with remarkable ease. This approach fundamentally simplifies the creation of user
+          interfaces that gracefully scale from mobile devices to large desktop displays.
         </p>
       </div>
     </div>
