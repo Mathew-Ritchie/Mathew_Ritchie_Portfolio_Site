@@ -14,13 +14,14 @@
   background-color: var(--clt-dark);
   color: var(--clr-main-text);
   width: 100vw;
+  padding-top: 150px;
 }
 
 .individual-project-title {
   margin: 0;
 
   text-align: center;
-  padding: 20px 10px;
+  padding: 0px 10px 10px 10px;
 }
 
 .ind-project-img-container {
