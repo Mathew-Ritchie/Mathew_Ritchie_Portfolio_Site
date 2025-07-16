@@ -56,7 +56,9 @@ export default function ProjectsPage() {
       </div>
       <div>
         {project.description.map((item, index) => (
-          <p key={index}>{item}</p>
+          <p key={index} className="project-description">
+            {item}
+          </p>
         ))}
       </div>
     </div>
