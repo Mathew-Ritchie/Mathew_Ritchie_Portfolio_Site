@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import "./individual-show-pages.css";
 import projectData from "../Projects-data/projectData";
 
-const imagelocation = `../assets/${SDF}/*`;
-const imageModules = import.meta.glob(imagelocation, { eager: true });
-const imageList = Object.values(imageModules).map((module) => module.default);
-
 export default function ProjectsPage() {
+  const { projectId } = useParams();
+
+  const project = projectData[projectId];
+
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const imageList = project.imagePaths || [];
+
+  console.log(project.imagePaths);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % imageList.length);
@@ -19,11 +24,12 @@ export default function ProjectsPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+    setCurrentIndex(0);
+  }, [projectId]);
 
   return (
     <div className="project-body">
-      <h1 className="individual-project-title">{projectData.SDF.title}</h1>
+      <h1 className="individual-project-title">{project.title}</h1>
       <div className="carousel">
         <div
           className="carousel-wrapper"
@@ -41,22 +47,17 @@ export default function ProjectsPage() {
         </div>
       </div>
       <div>
-        <p className="project-technologies">{projectData.SDF.technoligies} </p>
+        <p className="project-technologies">{project.technoligies} </p>
       </div>
       <div className="project-btn-div">
-        <a href={projectData.SDF.githubURL} target="_blank" className="project-page-btns">
+        <a href={project.githubURL} target="_blank" className="project-page-btns">
           Github Repository
         </a>
       </div>
       <div>
-        {projectData.SDF.description.map((item) => (
-          <p>{item}</p>
+        {project.description.map((item, index) => (
+          <p key={index}>{item}</p>
         ))}
-
-        {/* <p className="project-description">
-          My first portfolio piece for CodeSpace was a code along experience where we focussed on
-          HTML and CSS which was added with Tailwinds.
-        </p> */}
       </div>
     </div>
   );

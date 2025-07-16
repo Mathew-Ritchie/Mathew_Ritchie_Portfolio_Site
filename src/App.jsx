@@ -19,9 +19,10 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/Project" element={<ProjectHeaderFooter />}>
-          <Route path="SDF" element={<SDFNew />} />
+          <Route path=":projectId" element={<ProjectsPage />} />
+          {/* <Route path="SDF" element={<SDFNew />} />
           <Route path="JSL" element={<JSLNew />} />
-          <Route path="DJS" element={<DJSNew />} />
+          <Route path="DJS" element={<DJSNew />} /> */}
           <Route path="fakestore" element={<FakeStorePage />} />
           <Route path="recipe_app" element={<RecipeAppPage />} />
           <Route path="projectPage" element={<ProjectsPage />} />

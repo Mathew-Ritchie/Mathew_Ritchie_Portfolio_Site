@@ -2,11 +2,11 @@ const projectData = {
   SDF: {
     title: "Cache Bank Landing Page",
     technoligies: "HTML | CSS",
-    imagepaths: [
-      "../assets/SDF/SDF1",
-      "../assets/SDF/SDF2",
-      "../assets/SDF/SDF3",
-      "../assets/SDF/SDF4",
+    imagePaths: [
+      "../public/SDF/SDF1.png",
+      "../public/SDF/SDF2.png",
+      "../public/SDF/SDF3.png",
+      "../public/SDF/SDF4.png",
     ],
     githubURL:
       "https://github.com/Mathew-Ritchie/SDF_Portfolio_Piece_MATRIT24048_FTO1024_B_Mathew-Ritchie_SDF11",
@@ -19,15 +19,15 @@ const projectData = {
   JSL: {
     title: "Agile Board App",
     technoligies: "JAVASCRIPT",
-    imagepaths: [
-      "../assets/JSL/JSL1",
-      "../assets/JSL/JSL2",
-      "../assets/JSL/JSL3",
-      "../assets/JSL/JSL4",
-      "../assets/JSL/JSL5",
-      "../assets/JSL/JSL6",
-      "../assets/JSL/JSL7",
-      "../assets/JSL/JSL8",
+    imagePaths: [
+      "../public/JSL/JSL1.png",
+      "../public/JSL/JSL2.png",
+      "../public/JSL/JSL3.png",
+      "../public/JSL/JSL4.png",
+      "../public/JSL/JSL5.png",
+      "../public/JSL/JSL6.png",
+      "../public/JSL/JSL7.png",
+      "../public/JSL/JSL8.png",
     ],
     githubURL:
       "https://github.com/Mathew-Ritchie/JSL_Portfolio_Piece_MATRIT24048_FTO2410_B_Mathew--Ritchie_JSL11",
@@ -52,11 +52,11 @@ const projectData = {
   DJS: {
     title: "The Best Ever Podcast web App",
     technoligies: "JAVASCRIPT | REACT | CSS",
-    imagepaths: [
-      "../assets/DJS/DJS1",
-      "../assets/DJS/DJS2",
-      "../assets/DJS/DJS3",
-      "../assets/DJS/DJS4",
+    imagePaths: [
+      "../public/DJS/DJS1.png",
+      "../public/DJS/DJS2.png",
+      "../public/DJS/DJS3.png",
+      "../public/DJS/DJS4.png",
     ],
     githubURL:
       "https://github.com/Mathew-Ritchie/Mathew_Ritchie_Podcast_Portfolio_Project_CodeSpace_DJS11",
