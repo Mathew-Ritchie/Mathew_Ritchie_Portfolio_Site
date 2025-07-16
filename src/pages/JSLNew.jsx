@@ -20,7 +20,7 @@ export default function JSLNew() {
 
   return (
     <div className="project-body">
-      <h1 className="individual-project-title">My-Fake-Store.com</h1>
+      <h1 className="individual-project-title">Agile Board App</h1>
       <div className="carousel">
         <div
           className="carousel-wrapper"

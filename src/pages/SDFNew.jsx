@@ -20,7 +20,7 @@ export default function SDFNew() {
 
   return (
     <div className="project-body">
-      <h1 className="individual-project-title">The Best Ever Podcast web App</h1>
+      <h1 className="individual-project-title">Cache Bank Landing Page</h1>
       <div className="carousel">
         <div
           className="carousel-wrapper"
