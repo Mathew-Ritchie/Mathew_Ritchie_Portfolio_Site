@@ -1,8 +1,13 @@
 const projectData = {
   SDF: {
-    name: "Cache Bank Landing Page",
+    title: "Cache Bank Landing Page",
     technoligies: "HTML | CSS",
-    imageFile: "SDF",
+    imagepaths: [
+      "../assets/SDF/SDF1",
+      "../assets/SDF/SDF2",
+      "../assets/SDF/SDF3",
+      "../assets/SDF/SDF4",
+    ],
     githubURL:
       "https://github.com/Mathew-Ritchie/SDF_Portfolio_Piece_MATRIT24048_FTO1024_B_Mathew-Ritchie_SDF11",
     website: null,
@@ -12,9 +17,18 @@ const projectData = {
     ],
   },
   JSL: {
-    name: "Agile Board App",
+    title: "Agile Board App",
     technoligies: "JAVASCRIPT",
-    imageFile: "JSL",
+    imagepaths: [
+      "../assets/JSL/JSL1",
+      "../assets/JSL/JSL2",
+      "../assets/JSL/JSL3",
+      "../assets/JSL/JSL4",
+      "../assets/JSL/JSL5",
+      "../assets/JSL/JSL6",
+      "../assets/JSL/JSL7",
+      "../assets/JSL/JSL8",
+    ],
     githubURL:
       "https://github.com/Mathew-Ritchie/JSL_Portfolio_Piece_MATRIT24048_FTO2410_B_Mathew--Ritchie_JSL11",
     website: null,
@@ -36,9 +50,14 @@ const projectData = {
     ],
   },
   DJS: {
-    name: "The Best Ever Podcast web App",
+    title: "The Best Ever Podcast web App",
     technoligies: "JAVASCRIPT | REACT | CSS",
-    imageFile: "DJS",
+    imagepaths: [
+      "../assets/DJS/DJS1",
+      "../assets/DJS/DJS2",
+      "../assets/DJS/DJS3",
+      "../assets/DJS/DJS4",
+    ],
     githubURL:
       "https://github.com/Mathew-Ritchie/Mathew_Ritchie_Podcast_Portfolio_Project_CodeSpace_DJS11",
     website: "https://the-best-ever-podcast-web-app-2.netlify.app/",
