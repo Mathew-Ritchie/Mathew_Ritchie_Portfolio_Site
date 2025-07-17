@@ -54,11 +54,7 @@ export default function ProjectsPage() {
           Github Repository
         </a>
         {project.website && (
-          <a
-            href="https://the-best-ever-podcast-web-app-2.netlify.app/"
-            target="_blank"
-            className="project-page-btns"
-          >
+          <a href={project.website} target="_blank" className="project-page-btns">
             Website
           </a>
         )}

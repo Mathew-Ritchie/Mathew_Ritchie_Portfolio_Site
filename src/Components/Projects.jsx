@@ -36,7 +36,7 @@ export default function Projects() {
       alt: "screenshot of Fake Store App",
       title: "My-Fake-Store App",
       subTitle: "JavaScript, React, Zustand, Firebase",
-      to: "/project/fakestore",
+      to: "/project/fakeStore",
     },
     {
       img: recipeBook,
