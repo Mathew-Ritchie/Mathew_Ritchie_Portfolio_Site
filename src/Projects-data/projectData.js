@@ -3,10 +3,10 @@ const projectData = {
     title: "Cache Bank Landing Page",
     technoligies: "HTML | CSS",
     imagePaths: [
-      "../public/SDF/SDF1.png",
-      "../public/SDF/SDF2.png",
-      "../public/SDF/SDF3.png",
-      "../public/SDF/SDF4.png",
+      "../public/sdf/sdf1.png",
+      "../public/sdf/sdf2.png",
+      "../public/sdf/sdf3.png",
+      "../public/sdf/sdf4.png",
     ],
     githubURL:
       "https://github.com/Mathew-Ritchie/SDF_Portfolio_Piece_MATRIT24048_FTO1024_B_Mathew-Ritchie_SDF11",
