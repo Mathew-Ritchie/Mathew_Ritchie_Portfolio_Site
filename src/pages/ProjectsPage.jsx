@@ -53,6 +53,15 @@ export default function ProjectsPage() {
         <a href={project.githubURL} target="_blank" className="project-page-btns">
           Github Repository
         </a>
+        {project.website && (
+          <a
+            href="https://the-best-ever-podcast-web-app-2.netlify.app/"
+            target="_blank"
+            className="project-page-btns"
+          >
+            Website
+          </a>
+        )}
       </div>
       <div>
         {project.description.map((item, index) => (
