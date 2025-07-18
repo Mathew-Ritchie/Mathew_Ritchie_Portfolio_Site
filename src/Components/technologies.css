@@ -9,6 +9,7 @@
   color: var(--clr-alt-text);
   text-align: center;
   height: 30vh;
+  /* width: 100vw; */
   padding: 2em;
   height: fit-content;
 }

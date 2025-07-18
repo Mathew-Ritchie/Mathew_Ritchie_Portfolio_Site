@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: column;
   height: 60vh;
+  width: 100vw;
   background-color: var(--clt-dark);
   color: var(--clr-main-text);
   padding: 20px 0px;

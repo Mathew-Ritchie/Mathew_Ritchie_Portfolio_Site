@@ -14,23 +14,24 @@ export default function Header({ onToggleModal }) {
 
   return (
     <header className="header-container" id="header-container">
-      <div className="header-background-div"></div>
-      <div className="header-div">
-        <img
-          className="header-img"
-          src={newLogo}
-          alt="logo showing computer outline with coding tags on the screen."
-        />
-        <div className="header-nav-toggle-div">
-          <NavBar />
-          <button
-            className="header-nav-modal-btn"
-            id="header-nav-modal-btn"
-            onClick={onToggleModal}
-          >
-            ☰
-          </button>
-          <ThemeToggleBtn />
+      <div className="header-background-div">
+        <div className="header-div">
+          <img
+            className="header-img"
+            src={newLogo}
+            alt="logo showing computer outline with coding tags on the screen."
+          />
+          <div className="header-nav-toggle-div">
+            <NavBar />
+            <button
+              className="header-nav-modal-btn"
+              id="header-nav-modal-btn"
+              onClick={onToggleModal}
+            >
+              ☰
+            </button>
+            <ThemeToggleBtn />
+          </div>
         </div>
       </div>
     </header>
