@@ -36,7 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding-right: 50px; */
+  padding-right: 30px;
 }
 
 .header-nav-modal-btn {
@@ -77,6 +77,9 @@
 @media (min-width: 845px) {
   .header-nav-modal-btn {
     display: none;
+  }
+  .header-nav-toggle-div {
+    padding-right: 30px;
   }
 }
 
