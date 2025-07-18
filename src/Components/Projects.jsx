@@ -6,7 +6,7 @@ import JSL from "../assets/JSL-pic.png";
 import SDF from "../assets/SDF-pic.png";
 import DJS from "../assets/DJS.png";
 import FakeStore from "../assets/fakestore.png";
-import recipeBook from "../assets/recipe-app/recipe1.png";
+import recipeBook from "../../public/recipe-app/recipe1.png";
 
 export default function Projects() {
   const projects = [
@@ -43,7 +43,7 @@ export default function Projects() {
       alt: "screenshot of My Recipe Book App",
       title: "My Recipe Book",
       subTitle: " Tailwind, JavaScript, React, Zustand",
-      to: "/project/recipe_app",
+      to: "/project/recipeBook",
     },
   ];
 

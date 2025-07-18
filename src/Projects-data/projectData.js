@@ -113,6 +113,49 @@ const projectData = {
           their account.`,
     ],
   },
+
+  recipeBook: {
+    title: "My Recipe Book",
+    technoligies: "| JAVASCRIPT | REACT | ZUSTAND | TAILWIND CSS",
+    imagePaths: [
+      "/recipe-app/recipe1.png",
+      "/recipe-app/recipe2.png",
+      "/recipe-app/recipe3.png",
+      "/recipe-app/recipe4.png",
+    ],
+    githubURL: "https://github.com/Mathew-Ritchie/Recipe_App_API_Practice_Mathew_Ritchie",
+    website: "https://mathews-recipe-book.netlify.app/recipes/a",
+    description: [
+      `The "My Recipe Book" web application was developed as a personal project to explore and
+          implement modern web development technologies. The primary focus of this was to gain more
+          practical experience with Tailwind CSS for styling and to integrate with The MealDB API
+          for data retrieval.`,
+
+      `The application leverages React with JavaScript for its front-end architecture,
+          utilizing a Zustand store to efficiently fetch and manage data from The MealDB API. The
+          MealDB API is a publicly available resource that provides comprehensive meal and recipe
+          data. Users can search for recipes based on the initial letter of the recipe title or by
+          category. Upon selecting a specific recipe, the application fetches detailed information,
+          including ingredients, measurements, preparation instructions, and links to associated
+          YouTube videos, all identified via a unique recipe ID.`,
+
+      `A core objective of this project was to thoroughly engage with the Tailwind CSS
+          framework. A significant advantage observed during development was Tailwind's ability to
+          streamline project file organization by reducing the need for numerous external CSS files,
+          a common practice in traditional component-based styling. While this approach effectively
+          declutters the project's file structure, it does introduce a trade-off by increasing the
+          density of className attributes within JSX files.`,
+
+      `Furthermore, Tailwind CSS significantly streamlines the process of implementing responsive
+          design. Its utility-first and mobile-first philosophy, coupled with an intuitive system of
+          responsive variants and built-in breakpoints (e.g., sm:, md:, lg:), allows developers to
+          define how elements behave and appear across different screen sizes directly within the
+          HTML markup. This eliminates the need for writing verbose custom media queries in separate
+          CSS files, thereby accelerating development cycles and ensuring consistent, adaptive
+          layouts with remarkable ease. This approach fundamentally simplifies the creation of user
+          interfaces that gracefully scale from mobile devices to large desktop displays.`,
+    ],
+  },
 };
 
 export default projectData;

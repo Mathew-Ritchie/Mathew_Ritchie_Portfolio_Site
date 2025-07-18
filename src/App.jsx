@@ -19,7 +19,7 @@ function App() {
         <Route path="/Project" element={<ProjectHeaderFooter />}>
           <Route path=":projectId" element={<ProjectsPage />} />
           {/* <Route path="fakeStore" element={<FakeStorePage />} /> */}
-          <Route path="recipe_app" element={<RecipeAppPage />} />
+          {/* <Route path="recipe_app" element={<RecipeAppPage />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
