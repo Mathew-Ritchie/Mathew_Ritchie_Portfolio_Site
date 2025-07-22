@@ -60,7 +60,7 @@
   box-shadow: var(--bs);
   border-radius: 10px;
   animation: fadeIn 1.5s ease-out forwards;
-  animation-delay: 0.8s;
+  animation-delay: 0.5s;
   opacity: 0;
 }
 
@@ -71,7 +71,7 @@
   margin-bottom: 0.25em;
 
   animation: slideInFromLeft 0.8s ease-out forwards;
-  animation-delay: 0.2s;
+  animation-delay: 0.5s;
   opacity: 0;
 }
 
@@ -79,7 +79,7 @@ strong.intro-title-2 {
   font-weight: var(--fw-bold);
   font-size: xx-large;
   animation: slideInFromLeft 0.8s ease-out forwards;
-  animation-delay: 0.4s;
+  animation-delay: 0.5s;
   opacity: 0;
 }
 
@@ -100,14 +100,11 @@ strong.intro-title-2 {
 /* ________________________________________________max 600px ________________________________________________ */
 
 @media (min-width: 480px) and (max-width: 599px) {
-  .intro-div {
-  }
   .intro-section {
     height: 100vh;
   }
   .intro-img {
     margin-bottom: 10px;
-
     max-width: 400px;
   }
 }
