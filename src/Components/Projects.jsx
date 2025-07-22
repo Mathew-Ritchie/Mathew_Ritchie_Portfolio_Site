@@ -6,7 +6,7 @@ import JSL from "../assets/JSL-pic.png";
 import SDF from "../assets/SDF-pic.png";
 import DJS from "../assets/DJS.png";
 import FakeStore from "../assets/fakestore.png";
-import recipeBook from "../../public/recipe-app/recipe1.png";
+import recipeBook from "../assets/recipe1.png";
 
 export default function Projects() {
   const projects = [
