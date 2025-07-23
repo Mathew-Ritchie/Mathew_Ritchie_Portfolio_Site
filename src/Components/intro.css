@@ -38,12 +38,13 @@
 
 .intro-section {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   background-color: var(--clr-medium);
   overflow: hidden;
+  padding-top: 20px;
 }
 
 .intro-div {
@@ -62,6 +63,7 @@
   animation: fadeIn 1.5s ease-out forwards;
   animation-delay: 0.5s;
   opacity: 0;
+  margin-bottom: 40px;
 }
 
 .intro-title {
@@ -110,6 +112,10 @@ strong.intro-title-2 {
 }
 
 @media (min-width: 600px) {
+  .intro-section {
+    align-items: center;
+    height: 100vh;
+  }
   .intro-div {
     display: grid;
     width: min-content;
@@ -123,13 +129,9 @@ strong.intro-title-2 {
     grid-template-rows: 180px 50px 200px;
   }
 
-  /* .intro-img {
-    grid-area: img;
-    max-width: 400px;
-    position: relative;
-    z-index: 2;
-    border-radius: 10px;
-  } */
+  .intro-img {
+    margin-bottom: 0px;
+  }
 
   .intro-title {
     font-size: xx-large;
