@@ -7,15 +7,23 @@ import SDF from "../assets/SDF-pic.png";
 import DJS from "../assets/DJS.png";
 import FakeStore from "../assets/fakestore.png";
 import recipeBook from "../assets/recipe1.png";
+import houtbay01 from "../assets/houtbay01.png";
 
 export default function Projects() {
   const projects = [
+    // {
+    //   img: SDF,
+    //   alt: "screenshot of Bank Landing Page",
+    //   title: "Cache Bank Landing Page",
+    //   subTitle: "HTML & CSS",
+    //   to: "/project/SDF",
+    // },
     {
-      img: SDF,
-      alt: "screenshot of Bank Landing Page",
-      title: "Cache Bank Landing Page",
-      subTitle: "HTML & CSS",
-      to: "/project/SDF",
+      img: houtbay01,
+      alt: "screenshot of The republic of Hout Bay landing page",
+      title: "The Republic of Hout Bay - Tourism site",
+      subTitle: "React & JavaScrit & Tailwind CSS & Zustand & Rest APIs",
+      to: "/project/houtbay",
     },
     {
       img: JSL,

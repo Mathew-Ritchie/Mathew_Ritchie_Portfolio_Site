@@ -88,10 +88,14 @@
   box-shadow: 2px 4px 10px var(--clr-light);
 }
 
+.project-description-div {
+  padding-bottom: 20px;
+}
+
 .project-description {
   font-size: large;
   padding: 0px 50px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 470px) {

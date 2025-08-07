@@ -1,14 +1,39 @@
 const projectData = {
-  SDF: {
-    title: "Cache Bank Landing Page",
-    technoligies: "HTML | CSS",
-    imagePaths: ["/sdf/sdf1.png", "/sdf/sdf2.png", "/sdf/sdf3.png", "/sdf/sdf4.png"],
-    githubURL:
-      "https://github.com/Mathew-Ritchie/SDF_Portfolio_Piece_MATRIT24048_FTO1024_B_Mathew-Ritchie_SDF11",
-    website: null,
+  // SDF: {
+  //   title: "Cache Bank Landing Page",
+  //   technoligies: "HTML | CSS",
+  //   imagePaths: ["/sdf/sdf1.png", "/sdf/sdf2.png", "/sdf/sdf3.png", "/sdf/sdf4.png"],
+  //   githubURL:
+  //     "https://github.com/Mathew-Ritchie/SDF_Portfolio_Piece_MATRIT24048_FTO1024_B_Mathew-Ritchie_SDF11",
+  //   website: null,
+  //   description: [
+  //     `My first portfolio piece for CodeSpace was a code along experience where we focussed on HTML and CSS
+  //      which was added with Tailwinds.`,
+  //   ],
+  // },
+  houtbay: {
+    title: "The Republic of Hout Bay - Tourism site",
+    technoligies: "React | JavaScrit | Tailwind CSS | Zustand | Rest APIs",
+    imagePaths: [
+      "/houtbay/houtbay01.png",
+      "/houtbay/houtbay02.png",
+      "/houtbay/houtbay03.png",
+      "/houtbay/houtbay04.png",
+      "/houtbay/houtbay05.png",
+    ],
+    githubURL: "https://github.com/Mathew-Ritchie/Hout_Bay_Tourism_Site_Mathew_Ritchie",
+    website: "https://the-republic-of-houtbay.netlify.app/",
     description: [
-      `My first portfolio piece for CodeSpace was a code along experience where we focussed on HTML and CSS 
-       which was added with Tailwinds.`,
+      `The Republic is a tourism website that I am developing, with the hope that it could 
+      ultimately grow into a realistic, real world opportunity. It was the idea of taking my home of 
+      Hout Bay and creating a space where local and foreign visitors can get to know the
+      village and obtain information about local restarants, shops and activities.`,
+      `I have used React as my framework for this project, and continued to practice and
+      grow my JavaScript skills. In addition I have used Zustand for store and State management
+      and Tailwind for styling and layout. For user navigation and routing I have used React Router.`,
+      `At present I have created a data object that contains all of my establishments data, this 
+      I hope to covert to a fully functioning API in the near future. In addition I am also making 
+      use of the Open Weather and free currency APIs to add more dynamic information to the site.`,
     ],
   },
   JSL: {

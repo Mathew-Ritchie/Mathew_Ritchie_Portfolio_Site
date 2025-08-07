@@ -59,7 +59,7 @@ export default function ProjectsPage() {
           </a>
         )}
       </div>
-      <div>
+      <div className="project-description-div">
         {project.description.map((item, index) => (
           <p key={index} className="project-description">
             {item}
