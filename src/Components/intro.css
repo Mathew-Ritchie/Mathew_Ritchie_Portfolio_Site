@@ -72,17 +72,17 @@
   font-weight: var(--fw-reg);
   margin-bottom: 0.25em;
 
-  animation: slideInFromLeft 0.8s ease-out forwards;
+  /* animation: slideInFromLeft 0.8s ease-out forwards;
   animation-delay: 0.5s;
-  opacity: 0;
+  opacity: 0; */
 }
 
 strong.intro-title-2 {
   font-weight: var(--fw-bold);
   font-size: xx-large;
-  animation: slideInFromLeft 0.8s ease-out forwards;
+  /* animation: slideInFromLeft 0.8s ease-out forwards;
   animation-delay: 0.5s;
-  opacity: 0;
+  opacity: 0; */
 }
 
 .intro-subtitle {
@@ -94,9 +94,9 @@ strong.intro-title-2 {
   margin: 0;
   font-size: var(--fs-h3);
   border-radius: 2px;
-  animation: slideInFromRight 2s ease-out forwards;
+  /* animation: slideInFromRight 2s ease-out forwards;
   animation-delay: 1.5s;
-  opacity: 0;
+  opacity: 0; */
 }
 
 /* ________________________________________________max 600px ________________________________________________ */
