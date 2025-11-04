@@ -9,7 +9,9 @@ export default function Intro() {
         <h1 className="intro-title">Hi, I am</h1>
         <strong className="intro-title-2">Mathew Ritchie</strong>
         <p className="intro-subtitle">Welcome to my portfolio</p>
-        <img className="intro-img" src={me} alt="profile picture of Mathew Ritchie" />
+        <div className="intro-img-div">
+          <img className="intro-img" src={me} alt="profile picture of Mathew Ritchie" />
+        </div>
       </div>
     </section>
   );

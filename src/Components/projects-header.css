@@ -1,4 +1,4 @@
-.projects-header-container {
+/* .projects-header-container {
   position: fixed;
   z-index: 100;
   width: 100vw;
@@ -45,7 +45,7 @@
 
 .toggle-btn {
   margin: 0px;
-}
+} */
 
 /* @media (max-width: 469px) {
   .projects-header-div {

@@ -32,7 +32,7 @@
 }
 
 .spacer {
-  height: 60px;
+  height: 67px;
   background-color: var(--clr-dark);
 }
 
@@ -64,6 +64,14 @@
   animation-delay: 0.5s; */
   /* opacity: 0; */
   margin-bottom: 40px;
+}
+
+.intro-img-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
 }
 
 .intro-title {

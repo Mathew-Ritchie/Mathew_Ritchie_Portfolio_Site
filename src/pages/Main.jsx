@@ -1,28 +1,15 @@
-import React, { useState } from "react";
-
-import Header from "../Components/Header.jsx";
 import Intro from "../Components/Intro.jsx";
 import Footer from "../Components/Footer.jsx";
 import AboutMe from "../Components/AboutMe.jsx";
 import Projects from "../Components/Projects.jsx";
-import NavModal from "../Components/NavModal.jsx";
+
 import Technologies from "../Components/Technologies.jsx";
+import NavModalHeader from "../Components/NavModalHeader.jsx";
 
 export default function MainPage() {
-  const [isModalVisible, setIsModalVisible] = useState(false);
-
-  const toggleModal = () => {
-    setIsModalVisible(!isModalVisible);
-  };
-
-  const hideModal = () => {
-    setIsModalVisible(false);
-  };
-
   return (
     <div>
-      <Header onToggleModal={toggleModal} />
-      <NavModal isModalVisible={isModalVisible} onHideModal={hideModal} />
+      <NavModalHeader />
       <div className="spacer" id="intro-spacer"></div>
       <Intro id="intro-div" />
       <div className="about-spacer" id="about-spacer"></div>
