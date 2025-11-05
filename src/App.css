@@ -10,7 +10,7 @@
   --clr-medium: #808080;
   --clt-dark: #303030;
   --clr-dark-rgb: rgba(48, 48, 48, 0.9);
-  --clr-accent: #ffae03;
+  --clr-accent: rgb(251 146 60);
   --clr-main-text: #fff;
   --clr-alt-text: #fff;
 
@@ -22,7 +22,7 @@
   --clr-medium: #e9e8e8;
   --clt-dark: #a2a2a2;
   --clr-dark-rgb: rgba(204, 203, 203, 0.9);
-  --clr-accent: #ffae03;
+  --clr-accent: rgb(251 146 60);
   --clr-main-text: #303030;
   --clr-alt-text: #303030;
 }

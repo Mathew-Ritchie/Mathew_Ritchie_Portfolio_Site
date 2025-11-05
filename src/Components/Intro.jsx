@@ -3,7 +3,7 @@ import me from "../assets/me.jpeg";
 
 export default function Intro() {
   return (
-    <section className="w-full min-h-screen flex justify-center items-start md:items-center bg-[var(--clt-dark)] overflow-hidden pt-5">
+    <section className="w-full min-h-screen flex justify-center items-start md:items-center bg-[var(--clt-dark)] overflow-hidden pt-22 md:pt-5">
       <div
         id="intro-div"
         className={
