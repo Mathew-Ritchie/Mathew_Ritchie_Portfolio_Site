@@ -1,26 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "./individual-show-pages.css";
 import projectData from "../Projects-data/projectData";
 
 export default function ProjectsPage() {
   const { projectId } = useParams();
-
   const project = projectData[projectId];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const imageList = project.imagePaths || [];
 
-  console.log(project.imagePaths);
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % imageList.length);
-  };
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + imageList.length) % imageList.length);
-  };
+  const handleNext = () => setCurrentIndex((prev) => (prev + 1) % imageList.length);
+  const handlePrev = () =>
+    setCurrentIndex((prev) => (prev - 1 + imageList.length) % imageList.length);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -28,40 +19,78 @@ export default function ProjectsPage() {
   }, [projectId]);
 
   return (
-    <div className="project-body">
-      <h1 className="individual-project-title">{project.title}</h1>
-      <div className="carousel">
+    <div className="bg-[var(--clt-dark)] text-[var(--clr-main-text)] w-full min-h-screen pt-32 px-4 md:px-8">
+      {/* Title */}
+      <h1 className="text-center text-3xl md:text-5xl font-bold mb-8">{project.title}</h1>
+
+      {/* Carousel */}
+      <div className="relative w-full overflow-hidden rounded-lg shadow-lg mb-10 max-w-5xl mx-auto">
         <div
-          className="carousel-wrapper"
+          className="flex transition-transform duration-700 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {imageList.map((item, index) => (
-            <div key={index} className="carousel-item">
-              <img src={item} />
+            <div
+              key={index}
+              className="min-w-full flex justify-center items-center bg-[var(--clr-light)]"
+            >
+              <img
+                src={item}
+                alt=""
+                className="max-w-full max-h-[500px] object-contain rounded-lg"
+              />
             </div>
           ))}
         </div>
-        <div className="carousel-btn-div">
-          <button onClick={handlePrev}>Previous</button>
-          <button onClick={handleNext}>Next</button>
+
+        {/* Buttons */}
+        <div className="absolute inset-0 flex justify-between items-center px-3">
+          <button
+            onClick={handlePrev}
+            className="bg-black/40 hover:bg-black/70 text-white px-4 py-2 rounded-full transition"
+          >
+            ‹
+          </button>
+          <button
+            onClick={handleNext}
+            className="bg-black/40 hover:bg-black/70 text-white px-4 py-2 rounded-full transition"
+          >
+            ›
+          </button>
         </div>
       </div>
-      <div>
-        <p className="project-technologies">{project.technoligies} </p>
-      </div>
-      <div className="project-btn-div">
-        <a href={project.githubURL} target="_blank" className="project-page-btns">
-          Github Repository
+
+      {/* Technologies */}
+      <p className="text-center text-xl text-[var(--clr-accent)] font-semibold mb-6">
+        {project.technoligies}
+      </p>
+
+      {/* Buttons */}
+      <div className="flex justify-center flex-wrap gap-4 mb-10">
+        <a
+          href={project.githubURL}
+          target="_blank"
+          rel="noreferrer"
+          className="bg-[var(--clr-accent)] hover:bg-[var(--clr-accent-hover,#ffb733)] text-white px-6 py-2 rounded-full text-lg shadow-md hover:shadow-lg transition"
+        >
+          GitHub Repository
         </a>
         {project.website && (
-          <a href={project.website} target="_blank" className="project-page-btns">
+          <a
+            href={project.website}
+            target="_blank"
+            rel="noreferrer"
+            className="bg-[var(--clr-accent)] hover:bg-[var(--clr-accent-hover,#ffb733)] text-white px-6 py-2 rounded-full text-lg shadow-md hover:shadow-lg transition"
+          >
             Website
           </a>
         )}
       </div>
-      <div className="project-description-div">
+
+      {/* Description */}
+      <div className="max-w-4xl mx-auto space-y-4 pb-16">
         {project.description.map((item, index) => (
-          <p key={index} className="project-description">
+          <p key={index} className="text-lg leading-relaxed">
             {item}
           </p>
         ))}

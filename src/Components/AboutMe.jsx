@@ -1,15 +1,19 @@
 import React from "react";
-import boat from "../assets/boat.jpg";
-import "./about-me.css";
+import aboutBg from "../assets/Aboutmeback.jpeg";
 
 export default function AboutMe() {
   return (
-    <div className="about-me-div" id="about-me-div">
-      <div className="about-spacer" id="about-spacer"></div>
-      <div className="about-me-paragraph-div">
-        <h1 className="about-me-heading">About me</h1>
+    <div
+      id="about-me-div"
+      className="flex flex-col justify-center items-center min-h-fit h-screen w-full text-white bg-cover bg-no-repeat bg-fixed"
+      style={{ backgroundImage: `url(${aboutBg})` }}
+    >
+      <div id="about-spacer" className="h-0"></div>
 
-        <p className="about-me-p">
+      <div className="flex flex-col justify-center items-center bg-[rgba(0,0,0,0.7)] rounded-md mx-10 lg:mx-20 px-3 py-2 my-10">
+        <h1 className="text-orange-400 py-7 drop-shadow-md text-5xl mb-0">About me</h1>
+
+        <p className="text-gray-100 text-start mt-0 px-2 pb-2 text-base lg:text-xl">
           Currently based in the vibrant community of Hout Bay, Cape Town, I'm an easy-going and
           friendly individual who appreciates a balanced approach to life. My inherent drive and
           meticulous nature naturally align with my passion for web development, where I find

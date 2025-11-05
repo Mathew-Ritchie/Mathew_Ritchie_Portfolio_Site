@@ -19,9 +19,9 @@
 
 .light-theme {
   --clr-light: #fff;
-  --clr-medium: #fff;
-  --clt-dark: #e0e0e0;
-  --clr-dark-rgb: rgba(224, 224, 224, 0.9);
+  --clr-medium: #e9e8e8;
+  --clt-dark: #a2a2a2;
+  --clr-dark-rgb: rgba(204, 203, 203, 0.9);
   --clr-accent: #ffae03;
   --clr-main-text: #303030;
   --clr-alt-text: #303030;

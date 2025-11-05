@@ -1,7 +1,7 @@
 export default function Technologies() {
   return (
-    <section className="w-full flex flex-col items-center justify-center bg-gray-800 py-15 px-10 gap-10">
-      <h1 className="text-white text-5xl">Technologies</h1>
+    <section className="w-full flex flex-col items-center justify-center bg-[var(--clt-dark)] py-15 px-10 gap-10">
+      <h1 className="text-[var(--clr-accent)] drop-shadow-md text-5xl">Technologies</h1>
       <div className="flex flex-wrap justify-center items-center gap-6">
         <code>
           <img

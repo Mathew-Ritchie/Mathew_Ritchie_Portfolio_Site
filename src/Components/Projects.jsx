@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./projects.css";
 import { v4 as createId } from "uuid";
 import JSL from "../assets/JSL-pic.png";
 import SDF from "../assets/SDF-pic.png";
@@ -11,18 +10,11 @@ import houtbay01 from "../assets/houtbay01.png";
 
 export default function Projects() {
   const projects = [
-    // {
-    //   img: SDF,
-    //   alt: "screenshot of Bank Landing Page",
-    //   title: "Cache Bank Landing Page",
-    //   subTitle: "HTML & CSS",
-    //   to: "/project/SDF",
-    // },
     {
       img: houtbay01,
       alt: "screenshot of The republic of Hout Bay landing page",
       title: "The Republic of Hout Bay - Tourism site",
-      subTitle: "React & JavaScrit & Tailwind CSS & Zustand & Rest APIs",
+      subTitle: "React | JavaScript | Tailwind | Zustand | Rest APIs",
       to: "/project/houtbay",
     },
     {
@@ -36,50 +28,66 @@ export default function Projects() {
       img: DJS,
       alt: "screenshot of Podcast App",
       title: "Podcast App",
-      subTitle: "JavaScript, React, Css",
+      subTitle: "JavaScript | React | CSS",
       to: "/project/DJS",
     },
     {
       img: FakeStore,
       alt: "screenshot of Fake Store App",
       title: "My-Fake-Store App",
-      subTitle: "JavaScript, React, Zustand, Firebase",
+      subTitle: "JavaScript | React | Zustand | Express.js | SQLite",
       to: "/project/fakeStore",
     },
     {
       img: recipeBook,
       alt: "screenshot of My Recipe Book App",
       title: "My Recipe Book",
-      subTitle: " Tailwind, JavaScript, React, Zustand",
+      subTitle: "Tailwind | JavaScript | React | Zustand | Rest APIs",
       to: "/project/recipeBook",
     },
   ];
 
   return (
-    <section className="my-projects-div" id="my-projects-div">
-      <div className="project-spacer" id="project-spacer"></div>
-      <div>
-        <h1 className="projects-title">Projects</h1>
-        <h3 className="projects-sub-title">(click on an image to see more!)</h3>
-        <div id="project-imgs-div">
+    <section
+      id="my-projects-div"
+      className="flex flex-col justify-start items-center w-full min-h-fit h-screen bg-[var(--clr-medium)]"
+    >
+      <div id="project-spacer" className="h-0"></div>
+
+      <div className="flex flex-col justify-center items-center w-full">
+        <h1 className="text-[var(--clr-accent)] text-center drop-shadow-md  mt-[70px] text-5xl font-semibold">
+          Projects
+        </h1>
+        <h3 className="text-center text-[var(--clr-main-text)] mb-10">
+          (click on an image to see more!)
+        </h3>
+
+        <div
+          id="project-imgs-div"
+          className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-5 sm:gap-8 pb-10"
+        >
           {projects.map((project) => (
-            <div key={createId()} className="project-img-wrapper">
-              <div className="image-boarder">
+            <div
+              key={createId()}
+              className="flex flex-col justify-center items-center w-[350px] sm:w-[400px]"
+            >
+              <div className="bg-[var(--clt-dark)] h-[275px] w-[105%] flex justify-center items-center rounded-lg">
                 <Link to={project.to}>
-                  <div className="container">
+                  <div className="relative w-[350px] sm:w-[400px] bg-[var(--clt-dark)] group">
                     <img
                       src={project.img}
                       alt={project.alt}
-                      className="image"
-                      // style="width: 100%"
+                      className="opacity-100 w-full h-[254px] transition-opacity duration-500 group-hover:opacity-30"
                     />
-                    <div className="middle">
-                      <div className="text">Click to see More</div>
+                    <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <div className="bg-[var(--clr-accent)] text-white text-base px-8 py-4 rounded">
+                        Click to see More
+                      </div>
                     </div>
                   </div>
                 </Link>
               </div>
-              <p className="project-title-sub">
+              <p className="text-center text-[var(--clr-main-text)] mt-4">
                 <strong>{project.title}</strong> <br />
                 <br />
                 {project.subTitle}

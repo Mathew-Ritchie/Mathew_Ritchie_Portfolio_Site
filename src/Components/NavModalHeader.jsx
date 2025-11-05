@@ -1,15 +1,13 @@
 import React, { useState } from "react";
-// The import for `next/link` has been removed as it is not available in this environment.
-// Standard <a> tags are used instead for navigation.
-import Logo from "../assets/mathewLogo.png"; // Assuming the logo image is stored in assets folder
+import Logo from "../assets/mathewLogo.png";
 import { Link } from "react-router-dom";
 import ThemeToggleBtn from "./ThemeToggleBtn";
 
 export default function NavModalHeader() {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  // const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
-  const [isAboutUsOpen, setIsAboutUsOpen] = useState(false);
+  // const [isAboutUsOpen, setIsAboutUsOpen] = useState(false);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -18,12 +16,12 @@ export default function NavModalHeader() {
     setIsAboutUsOpen(false);
   };
 
-  const toggleServices = () => {
-    setIsServicesOpen(!isServicesOpen);
+  // const toggleServices = () => {
+  //   setIsServicesOpen(!isServicesOpen);
 
-    setIsGalleryOpen(false);
-    setIsAboutUsOpen(false);
-  };
+  //   setIsGalleryOpen(false);
+  //   setIsAboutUsOpen(false);
+  // };
 
   const toggleGallery = () => {
     setIsGalleryOpen(!isGalleryOpen);
@@ -32,16 +30,16 @@ export default function NavModalHeader() {
     setIsAboutUsOpen(false);
   };
 
-  const toggleAboutUs = () => {
-    setIsAboutUsOpen(!isAboutUsOpen);
+  // const toggleAboutUs = () => {
+  //   setIsAboutUsOpen(!isAboutUsOpen);
 
-    setIsServicesOpen(false);
-    setIsGalleryOpen(false);
-  };
+  //   setIsServicesOpen(false);
+  //   setIsGalleryOpen(false);
+  // };
 
   return (
     <>
-      <div className="bg-gray-800/90 flex items-center justify-between py-2 text-white w-full fixed h-17 z-10">
+      <div className="bg-gray-800/90 flex items-center justify-between py-2 text-white w-full fixed h-17 z-20">
         <div className="flex items-center gap-2 w-full justify-between">
           <Link className="w-100" to={"/about-us"}>
             <img src={Logo} className="w-70" alt="Maichatron Logo" />
