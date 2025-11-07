@@ -7,7 +7,7 @@ import ThemeToggleBtn from "./ThemeToggleBtn";
 export default function ProjectsHeader() {
   return (
     <header
-      className="projects-header-container w-full fixed z-50 flex justify-between items-center p-4 shadow-md bg-gray-800/80"
+      className="projects-header-container w-full fixed z-50 flex justify-between items-center p-4 shadow-md bg-gray-950/80"
       id="projects-header-container"
     >
       <img

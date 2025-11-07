@@ -104,7 +104,7 @@ const projectData = {
   },
   fakeStore: {
     title: "My-Fake-Store.com",
-    technoligies: "JAVASCRIPT | REACT | ZUSTAND | FIREBASE",
+    technoligies: "JAVASCRIPT | REACT | ZUSTAND | TAILWIND CSS | EXPRESS.JS | SQLITE",
     imagePaths: [
       "/myFakeStore/fakeStore1.png",
       "/myFakeStore/fakeStore2.png",
@@ -121,21 +121,14 @@ const projectData = {
           component-based architecture for efficient development and maintainability. To manage the
           application's state effectively, I integrated Zustand, a lightweight and flexible state
           management solution that ensures predictable data flow throughout the application.`,
-      `A core feature of this store is its user authentication system. I leveraged
-          Firebase to handle user registration and secure storage of user credentials, enabling
+      `A core feature of this store is its user authentication system. I used Express.js and SQLite 
+      to build a backend to handle user registration and secure storage of user credentials, enabling
           users to log in with their unique details. This robust backend integration provides a
           reliable and scalable solution for user management, ensuring a personalized experience for
           each visitor.`,
       `Beyond user accounts, the store offers practical e-commerce functionalities. Users can add
-          items to their shopping cart or mark them as favorites, with these preferences persisting
-          across sessions. This is achieved through the strategic use of local storage, providing a
-          straightforward and efficient method for storing user-specific data directly within the
-          browser, enhancing the user's shopping journey. The entire interactive experience, from
+          items to their shopping cart or mark them as favourites.  The entire interactive experience, from
           form validation to dynamic content updates, is orchestrated using JavaScript.`,
-      `I am continuing to work on this project and will be looking to incorporate the
-          favourites and cart storage to Firebase. I would also like to add functionality whereby
-          the user can add more information to their account details, as well as update or delete
-          their account.`,
     ],
   },
 

@@ -39,7 +39,7 @@ export default function NavModalHeader() {
 
   return (
     <>
-      <div className="bg-gray-800/90 flex items-center justify-between py-2 text-white w-full fixed h-17 z-20">
+      <div className="bg-gray-950/90 flex items-center justify-between py-2 text-white w-full fixed h-17 z-20">
         <div className="flex items-center gap-2 w-full justify-between">
           <Link className="w-100" to={"/about-us"}>
             <img src={Logo} className="w-70" alt="Maichatron Logo" />

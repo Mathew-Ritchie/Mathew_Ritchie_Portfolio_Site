@@ -19,7 +19,7 @@ export default function ProjectsPage() {
   }, [projectId]);
 
   return (
-    <div className="bg-[var(--clt-dark)] text-[var(--clr-main-text)] w-full min-h-screen pt-32 px-4 md:px-8">
+    <div className="bg-[var(--clt-dark)] text-[var(--clr-main-text)] w-full min-h-screen pt-28 px-4 md:px-8">
       {/* Title */}
       <h1 className="text-center text-3xl md:text-5xl font-bold mb-8">{project.title}</h1>
 
@@ -61,9 +61,7 @@ export default function ProjectsPage() {
       </div>
 
       {/* Technologies */}
-      <p className="text-center text-xl text-[var(--clr-accent)] font-semibold mb-6">
-        {project.technoligies}
-      </p>
+      <p className="text-center text-2xl text-[var(--clr-accent)] mb-6">{project.technoligies}</p>
 
       {/* Buttons */}
       <div className="flex justify-center flex-wrap gap-4 mb-10">
@@ -71,7 +69,7 @@ export default function ProjectsPage() {
           href={project.githubURL}
           target="_blank"
           rel="noreferrer"
-          className="bg-[var(--clr-accent)] hover:bg-[var(--clr-accent-hover,#ffb733)] text-white px-6 py-2 rounded-full text-lg shadow-md hover:shadow-lg transition"
+          className="bg-[var(--clr-accent)] hover:bg-[var(--clr-accent-hover,#ffb733)] text-white w-50 px-6 py-2 text-center rounded-xl text-lg shadow-md hover:shadow-lg transition"
         >
           GitHub Repository
         </a>
@@ -80,7 +78,7 @@ export default function ProjectsPage() {
             href={project.website}
             target="_blank"
             rel="noreferrer"
-            className="bg-[var(--clr-accent)] hover:bg-[var(--clr-accent-hover,#ffb733)] text-white px-6 py-2 rounded-full text-lg shadow-md hover:shadow-lg transition"
+            className="bg-[var(--clr-accent)] hover:bg-[var(--clr-accent-hover,#ffb733)] text-white w-50 text-center px-6 py-2 rounded-xl text-lg shadow-md hover:shadow-lg transition"
           >
             Website
           </a>
