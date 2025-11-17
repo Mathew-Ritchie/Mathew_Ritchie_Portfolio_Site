@@ -1,154 +1,32 @@
+import React, { useEffect } from "react";
+import { motion } from "motion/react";
+import { technologiesData } from "../Projects-data/technologiesData";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function Technologies() {
+  useEffect(() => {
+    AOS.init({ duration: 600, offset: 80, once: false });
+  }, []);
+
   return (
     <section className="w-full flex flex-col items-center justify-center bg-[var(--clt-dark)] py-15 px-10 gap-10">
       <h1 className="text-[var(--clr-accent)] text-center drop-shadow-md  mt-[30px] text-6xl">
         Technologies
       </h1>
       <div className="flex flex-wrap justify-center items-center gap-6">
-        <code>
-          <img
-            width="70"
-            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/git.png"
-            alt="Git"
-            title="Git"
-          />
-        </code>
-        <code>
-          <img
-            width="70"
-            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/github.png"
-            alt="GitHub"
-            title="GitHub"
-          />
-        </code>
-        <code>
-          <img
-            width="70"
-            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/visual_studio_code.png"
-            alt="Visual Studio Code"
-            title="Visual Studio Code"
-          />
-        </code>
-        <code>
-          <img
-            width="70"
-            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png"
-            alt="HTML"
-            title="HTML"
-          />
-        </code>
-        <code>
-          <img
-            width="70"
-            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png"
-            alt="CSS"
-            title="CSS"
-          />
-        </code>
-        <code>
-          <img
-            width="70"
-            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tailwind_css.png"
-            alt="Tailwind CSS"
-            title="Tailwind CSS"
-          />
-        </code>
-        <code>
-          <img
-            width="70"
-            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/firebase.png"
-            alt="Firebase"
-            title="Firebase"
-          />
-        </code>
-        <code>
-          <img
-            width="70"
-            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/figma.png"
-            alt="Figma"
-            title="Figma"
-          />
-        </code>
-        <code>
-          <img
-            width="70"
-            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png"
-            alt="JavaScript"
-            title="JavaScript"
-          />
-        </code>
-        <code>
-          <img
-            width="70"
-            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png"
-            alt="React"
-            title="React"
-          />
-        </code>
-        <code>
-          <img
-            width="70"
-            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png"
-            alt="TypeScript"
-            title="TypeScript"
-          />
-        </code>
-        <code>
-          <img
-            width="70"
-            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/npm.png"
-            alt="npm"
-            title="npm"
-          />
-        </code>
-        <code>
-          <img
-            width="70"
-            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/node_js.png"
-            alt="Node.js"
-            title="Node.js"
-          />
-        </code>
-        <code>
-          <img
-            width="70"
-            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/express.png"
-            alt="Express"
-            title="Express"
-          />
-        </code>
-        <code>
-          <img
-            width="70"
-            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/next_js.png"
-            alt="Next.js"
-            title="Next.js"
-          />
-        </code>
-        <code>
-          <img
-            width="70"
-            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/vite.png"
-            alt="Vite"
-            title="Vite"
-          />
-        </code>
-        <code>
-          <img
-            width="70"
-            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/postgresql.png"
-            alt="PostgreSQL"
-            title="PostgreSQL"
-          />
-        </code>
-        <code>
-          <img
-            width="70"
-            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/sqlite.png"
-            alt="SQLite"
-            title="SQLite"
-          />
-        </code>
+        {technologiesData.map((tech, index) => (
+          <motion.code
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.3 }}
+            whileHover={{ scale: 1.2 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img width="70" src={tech.src} alt={tech.alt} title={tech.title} />
+          </motion.code>
+        ))}
       </div>
     </section>
   );

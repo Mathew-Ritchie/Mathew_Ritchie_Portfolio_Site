@@ -1,9 +1,16 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { v4 as createId } from "uuid";
 import projectsPreviewData from "../Projects-data/projectsPreviewData.js";
+import React, { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Projects() {
+  useEffect(() => {
+    AOS.init({ duration: 600, offset: 80 });
+  }, []);
+
   return (
     <section
       id="my-projects-div"
@@ -31,6 +38,7 @@ export default function Projects() {
               <Link
                 to={project.to}
                 className="group flex flex-col lg:flex-row lg:gap-5 items-center"
+                data-aos="flip-down"
               >
                 {/* IMAGE */}
                 <div className="relative w-[350px] sm:w-[400px] bg-[var(--clt-dark)]">
