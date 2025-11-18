@@ -10,7 +10,7 @@ export default function AboutMe() {
     >
       <div id="about-spacer" className="h-0"></div>
 
-      <div className="flex flex-col justify-center items-center bg-[rgba(0,0,0,0.7)] rounded-md mx-10 lg:mx-20 px-3 py-2 my-10">
+      <div className="flex flex-col justify-center items-center bg-[rgba(0,0,0,0.7)] rounded-md mx-4 lg:mx-20 px-3 py-1 my-10">
         <h1 className="text-orange-400 py-7 drop-shadow-md text-5xl mb-0">About me</h1>
 
         <p className="text-gray-100 text-start mt-0 px-2 pb-2 text-base lg:text-xl">
