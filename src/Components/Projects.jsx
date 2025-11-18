@@ -55,14 +55,21 @@ export default function Projects() {
                 </div>
 
                 {/* TEXT */}
-                <p className="text-center lg:text-start text-[var(--clr-main-text)] mt-4 w-[350px] transition-colors duration-300 ">
-                  <strong className="text-xl transition-colors duration-300 group-hover:text-[var(--clr-accent)]">
-                    {project.title}
-                  </strong>
-                  <br />
-                  <br />
-                  {project.subTitle}
-                </p>
+                <div className="flex flex-col justify-center items-center  w-[350px] sm:w-[400px] lg:items-start  text-gray-200 gap-2 mt-3 lg:mt-0">
+                  {project.title && (
+                    <h3 className="text-3xl transition-colors duration-300 group-hover:text-[var(--clr-accent)] text-center lg:text-start  ">
+                      {project.title}
+                    </h3>
+                  )}
+                  {project.subTitle && (
+                    <p className="text-xl text-center font-light lg:text-start">
+                      {project.subTitle}
+                    </p>
+                  )}
+                  {project.description && (
+                    <p className="text-md text-center lg:text-start">{project.description}</p>
+                  )}
+                </div>
               </Link>
             </div>
           ))}
